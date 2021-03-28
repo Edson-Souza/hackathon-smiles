@@ -1,0 +1,333 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+/* Reset */
+
+/* vaiabless */
+:root {
+  --primary: #ff5a00;
+  --text: #7c7c7c;
+  --light: #fff;
+}
+/* vaiabless */
+.celular{
+  
+}
+/* default styles */
+.divider {
+  border-top: 1px solid var(--text);
+  height: 0;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: var(--primary);
+  width: 100%;
+  height: 90px;
+  color: var(--light);
+  padding: 10px 15px;
+}
+
+.header .icon-Button {
+  background: none;
+  border: none;
+}
+
+.header > .left-menu {
+  display: flex;
+
+}
+
+.header > .left-menu > .front-desk {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.header > .left-menu > .front-desk >h3{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.header > .left-menu > .front-desk >span{
+  font-size: 10px;
+}
+
+.header > .right-menu {
+  display: flex;
+}
+
+.header > .right-menu > .milhas-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.menu-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--primary);
+  width: 100%;
+  height: 57px;
+  color: var(--light);
+  padding: 15px 30px;
+  border-top: 1px solid #DE4E00;
+}
+
+.menu-bar >ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-bar >ul >li >a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.menu-bar >ul >li >a.--ative{
+  background-color: var(--light);
+}
+
+.menu-bar >ul >li >a >svg{
+  fill: var(--light);
+}
+
+.menu-bar >ul >li >a.--ative >svg{
+  fill: var(--primary) !important;
+}
+
+
+.body-app {
+  width: 100vw;
+  height: calc(100vh - 146px);
+  margin-top: 90px;
+  overflow: auto;
+  padding: 0 30px;
+}
+
+.box-card {
+  width: fit-content;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.box-card.--row{
+  display: flex;
+}
+
+.box-card.--column{
+  display: flex;
+  flex-direction: column;
+}
+/* default styles */
+
+/* LOGIN */
+.login {
+  width: 100%;
+  height: 100vh;
+  padding: 0 30px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.login > .title {
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.login > .subtitle {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.login > .form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.login > .form > label {
+  color: var(--primary);
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.login > .form > input {
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: var(--primary);
+  border: none;
+  border-bottom: 1px solid var(--primary);
+  font-size: 12px;
+}
+
+.login > .form > input {
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+.login > .form > .checkbox-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 24px;
+  margin-bottom: 44px;
+  color: var(--text);
+}
+
+.login > .form input[type="submit"] {
+  background-color: var(--primary);
+  color: var(--light);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 0;
+  margin: 0;
+}
+
+.login > .forget-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.login > .forget-container > .link {
+  color: var(--primary);
+  font-size: 12px;
+  text-decoration: none;
+  margin: 24px 0;
+}
+
+.login > .card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login > .card-info div {
+  margin-left: 15px;
+}
+.login > .card-info p {
+  color: var(--text);
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.login > .card-info button {
+  width: 100%;
+  border: 1px solid var(--primary);
+  background-color: #f6f6f6;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.login > .form [type="checkbox"]:not(:checked),
+.login > .form [type="checkbox"]:checked {
+  opacity: 0.01;
+}
+.login > .form [type="checkbox"]:not(:checked) + label,
+.login > .form [type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 2.3em;
+  font-size: 1.05em;
+  line-height: 1.7;
+  cursor: pointer;
+}
+
+.login > .form [type="checkbox"]:not(:checked) + label:before,
+.login > .form [type="checkbox"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #de4e00;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 0 var(--primary);
+  -webkit-transition: all 0.275s;
+  transition: all 0.275s;
+}
+
+.login > .form [type="checkbox"]:not(:checked) + label:after,
+.login > .form [type="checkbox"]:checked + label:after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--light);
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #de4e00;
+  background: var(--primary);
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 0 var(--primary);
+  -webkit-transition: all 0.275s;
+  transition: all 0.275s;
+}
+
+.login > .form [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0) rotate(45deg);
+  transform: scale(0) rotate(45deg);
+}
+
+.login > .form [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(0);
+  transform: scale(1) rotate(0);
+}
+
+.login > .form [type="checkbox"]:disabled:not(:checked) + label:before,
+.login > .form [type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #e9e9e9;
+}
+
+.login > .form [type="checkbox"]:disabled:checked + label:after {
+  color: var(--text);
+}
+
+.login > .form [type="checkbox"]:disabled + label {
+  color: var(--text);
+}

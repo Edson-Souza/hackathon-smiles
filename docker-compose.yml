@@ -4,14 +4,3 @@ php:
    - "100:80"
   volumes:
    - ./www:/var/www/html
-  links:
-   - db
-
-db:
-  image: mysql:8
-  volumes:
-   - /var/lib/mysql
-   - ./docs/db.sql:/docker-entrypoint-initdb.d/dump.sql
-  environment:
-   - MYSQL_ROOT_PASSWORD=root
-   - MYSQL_DATABASE=mydb

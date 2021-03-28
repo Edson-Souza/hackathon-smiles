@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/css/login.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
@@ -16,7 +17,7 @@
   <body>
     <div class="login">
       <h1 class="title">Faça seu login na XXX Smiles</h1>
-      <form class="form">
+      <form class="form" action="home.php">
         <label>CPF ou numero Smiles</label>
         <input />
 
@@ -30,7 +31,7 @@
           <label for="check-remember" class="cursor-pointer"></label>
         </div>
 
-        <input type="submit" value="Entrar" />
+        <input id="form-brn" type="submit" value="Entrar" />
       </form>
 
       <div class="forget-container">
@@ -40,7 +41,7 @@
       <hr class="divider" />
       <h2 class="subtitle">Recebeu seu Cartão de Crédito Gol Smiles?</h2>
       <div class="card-info">
-        <img src="./img/cards.png" alt="cartões smiles" />
+        <img src="assets/img/img/cards.png" alt="cartões smiles" />
         <div>
           <p>
             Chegou a hora de acessar seus dados, acompanhar seu saldo de milhas
@@ -50,6 +51,6 @@
         </div>
       </div>
     </div>
-    <script src="./index.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
