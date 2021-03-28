@@ -1,0 +1,127 @@
+.home {
+  position: relative;
+  padding-top: 15px;
+}
+
+.home > .background {
+  position: absolute;
+  top: 485px;
+  left: 0;
+  background-color: var(--primary);
+  width: calc(100% + 60px);
+  height: calc((11 * 121px - 60.5px) - 400px + 15px);
+  margin-left: -30px;
+  z-index: -30;
+  clip-path: polygon(50% 0, 100% 50px, 100% 100%, 0 100%, 0 50px);
+}
+.home > .container-board {
+  display: grid;
+  grid-template-areas:
+    "first first"
+    ". .";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 242px);
+  z-index: 10;
+}
+
+.home > .container-board > .board {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  align-items: flex-start;
+  background: #3231313b;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.home > .container-board > .board:nth-child(1) {
+  grid-area: first;
+  justify-self: center !important;
+  align-self: start !important;
+}
+
+.home > .container-board > .board:nth-child(1)::before {
+  content: none !important;
+}
+
+.home > .container-board > .board:nth-child(2n + 1) {
+  align-self: end;
+  justify-self: end;
+}
+
+.home > .container-board > .board:nth-child(2n)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  border-top: 2px dotted #bdbdbd;
+  width: 40px;
+  height: 0px;
+}
+
+.home > .container-board > .board:nth-child(2n + 1)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -38px;
+  border-top: 2px dotted #bdbdbd;
+  width: 40px;
+  height: 0px;
+}
+
+.home > .container-board > .board > h2 {
+  font-size: 14px;
+  color: var(--light);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.home > .container-board > .board > img {
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.home > .container-board > .board > .amount {
+  font-size: 16px;
+  color: var(--light);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.home > .container-board > .board > .disclaimer {
+  font-size: 12px;
+  color: var(--light);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.home > .dotted-vertical {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  border-left: 2px dotted #bdbdbd;
+  width: 0;
+  height: calc(11 * 121px - 60.5px);
+  z-index: -20;
+}
+
+.home > .dotted-vertical > .cloud {
+  position: absolute;
+  top: 175px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.home > .dotted-vertical > .airplane {
+  position: absolute;
+  top: 470px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}

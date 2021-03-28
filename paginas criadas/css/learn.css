@@ -1,0 +1,44 @@
+.learn > .title {
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.learn > .card {
+  margin-bottom: 25px;
+}
+
+.learn > .card > .image-spotlight {
+  width: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.learn > .card > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: var(--primary);
+  margin-left: 10px;
+  margin: 8px 10px;
+}
+
+.learn > .card > .content > h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.learn > .card > .content > p {
+  margin-top: 8px;
+  font-size: 11px;
+}
+
+.learn > .card > .content > span {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: end;
+}
